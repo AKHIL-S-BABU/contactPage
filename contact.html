@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Akhil S</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Container */
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  background: #111827;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.contact-header p {
+  color: #94a3b8;
+}
+
+/* Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left Info */
+.contact-info {
+  background: #020617;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.info-item {
+  margin-bottom: 15px;
+  color: #cbd5f5;
+}
+
+/* Social Icons */
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 20px;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #38bdf8;
+  transform: translateY(-3px);
+}
+
+/* Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e2e8f0;
+  outline: none;
+  transition: 0.25s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+}
+
+/* Button */
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* Footer tagline */
+.tagline {
+  text-align: center;
+  margin-top: 35px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+
+  <div class="contact-header">
+    <h2>Contact Me</h2>
+    <p>Let's build something amazing together 🚀</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Left Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <div class="info-item"><strong>Name:</strong> Akhil S Babu</div>
+      <div class="info-item"><strong>Email:</strong> akhilsbabu15@gmail.com</div>
+      <div class="info-item"><strong>Location:</strong> Kochi, Kerala</div>
+      <div class="info-item"><strong>Status:</strong> Open to opportunities</div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/akhil-s-babu-7623361ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/AKHIL-S-BABU" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/this.akhils" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://akhil.buzz" target="_blank"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject">
+      <textarea rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+
+  <div class="tagline">
+    Building scalable backend systems with Java Spring Boot & Microservices.
+  </div>
+
+</div>
+
+</body>
+</html>
